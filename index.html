@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>REM ASADULLIN</title>
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<header>
+	<h5 id="logo" class="logo">REM ASADULLIN</h5>
+</header>
+
+	<div class="wrapper">
+	<section class="hero">
+	<div class="inner">
+	<div class="clipper">
+		<h1 id="flocka">REM ASADULLIN</h1>
+	</div>
+
+	<div class="anim-panel">
+		<p class="sexy-boi">Guitarist of MUUR and part-time space pirate.</p>
+		<a href="https://muur-proj.web.app/" class="read-btn primary">MUSIC</a>
+	</div>
+</div>
+</section>
+
+<section class="sidebar">
+	<div class="inner">
+		<div class="clipper">
+			<h2>ABOUT</h2>
+		</div>
+		<div class="anim-panel">
+			<p>Rem Asadullin is the guitarist of the band, MUUR. They have an ambiant, industrial sound.</p>
+			<a href="https://muur-proj.web.app/" class="read-btn shred">MUSIC</a>
+		</div>
+	</div>
+
+	</section>
+	<section class="contact">
+		<div class="inner">
+			<div class="clipper"></div>
+				<h2>CONTACT</h2>
+			</div>
+			<div class="anim-panel">
+				<p>Business inquiries and fan mail.</p>
+				<input type="text" name="email" placeholder="Email Address"></input>
+				<input type="text" name="message" id="message-text" placeholder="Write your message here"></input>
+			</div>
+		</div>
+	</section>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <script>
+
+		document.addEventListener("DOMContentLoaded", function(event) {
+
+			window.addEventListener("load", function(e) {
+			
+			document.body.style.display = "block";
+
+		var tl = new TimelineMax();
+
+        tl.staggerFrom('section', 2, {
+			opacity: 0,
+			scale: .5,
+			ease: Power2.easeOut
+		}, 0.2)
+
+		tl.staggerFrom('h1, h2', .5, {
+			opacity: 0,
+			y: -40,
+			ease: Power2.easeInOut
+			}, 0.2, "-=2")
+
+			tl.staggerFrom('.anim-panel', .5, {
+			opacity: 0,
+			y: -40,
+			ease: Power2.easeInOut
+			}, 0.2, "-=1.5")
+
+
+			}, false);
+		
+		});
+
+    </script>
+</body>
+</html>
